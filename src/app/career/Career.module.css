@@ -1,0 +1,211 @@
+
+/* .container { */
+    /* width: 100vw; */
+/* } */
+.first{
+  width: 100vw;
+}
+.img{
+  width: 100vw;
+  height:220px;
+  position: relative;
+ 
+}
+.nav11 > ol{
+  margin-bottom: 8px;
+  font-size: large;
+  font-weight: 600;
+}
+ .img > nav{
+  z-index: 1; 
+  position: relative;
+  padding: 20px;
+ }
+ .nav11 h3{
+  color: #ff4500;
+ }
+ @media (max-width:426px) {
+     
+.nav11 > ol{
+  margin-bottom: 8px;
+  font-size: medium;
+  font-weight: 600;
+}
+.img > nav{
+  padding: 10px;
+ }
+ .nav11 h3{
+  font-size: larger;
+ }
+ .img{
+  height:170px;
+}
+  
+ }
+   /* =================================== */
+
+  .secondcontainer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap:20px;
+    justify-content: space-around;
+    margin: 45px 0px;
+  }
+  .oppo{
+    width: 50%;
+    /* border: 1px solid grey; */
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.3);
+    padding: 12px;
+    text-align: center;
+
+  }
+  .oppo > img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+  }
+  
+
+  .onlineform{
+    width: 30%;
+    padding-top: 12px;
+    height: 490px;
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: rgb(228, 227, 227); */
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.3);
+  }
+  .onlineform h2{
+    margin-bottom: 25px;
+  }
+  .formgroup{
+    display: flex;
+    align-items: center;
+    margin-bottom:10px ;
+    border: 1px solid grey;
+    background-color: white;
+    /* border-radius: 10px; */
+  }
+  .formgroup input{
+    width: 100%;
+    padding: 10px;
+  }
+  .formgroup select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px ;
+  }
+  .formgroup button{
+    border: 1px solid grey;
+    background-color: orangered;
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 10px; */
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .marrtop{
+    margin-top: 35px;
+  }
+  .p11{
+    padding-left: 7px;
+  }
+  .p22 {
+    padding-right: 20px;
+  }
+  /* responsive ---------------------------------------------------- */
+  @media (max-width:1000px) and (min-width:650px) {
+    .secondcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .oppo{
+        width:80% ;
+
+    }
+    .onlineform{
+        width: 70% ;
+    }
+    
+  }
+ 
+
+  @media (max-width:650px) and (min-width:427px) {
+    .secondcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:40px
+    }
+    .oppo{
+        width:85% ;
+
+    }
+    .onlineform{
+        width: 75% ;
+    }
+    .oppo > img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+      }
+    
+  }
+
+  @media (max-width:426px) {
+    .secondcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .oppo{
+        width:100% ;
+
+    }
+    .onlineform{
+        width: 100% ;
+    }
+    .oppo > img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .onlineform h2{
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+      .oppo h2 {
+        font-size: 21px;
+      }
+      .formgroup input{
+        padding: 7px;
+      }
+  .formgroup button{
+    padding: 7px;
+  }
+  .formgroup select{
+    padding: 7px;
+  }
+    
+  }
+
+  .customFileLabel {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  
+
+  
+

@@ -1,0 +1,156 @@
+.first{
+  width: 100vw;
+}
+.img{
+  width: 100vw;
+  height:220px;
+  position: relative;
+ 
+}
+.nav11 > ol{
+  margin-bottom: 8px;
+  font-size: large;
+  font-weight: 600;
+}
+ .img > nav{
+  z-index: 10; 
+  position: relative;
+  padding: 20px;
+ }
+ .nav11 h3{
+  color: orangered;
+ }
+ @media (max-width:426px) {
+     
+.nav11 > ol{
+  margin-bottom: 8px;
+  font-size: medium;
+  font-weight: 600;
+}
+.img > nav{
+  padding: 10px;
+ }
+ .nav11 h3{
+  font-size: larger;
+ }
+ .img{
+  height:170px;
+}
+  
+ }
+   /* --------------------- */
+   .seccontainer{
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+   }
+   .seccontainer h2{
+    margin: 12px 0px;
+   }
+   .buttongroup{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin:20px 0px;
+  }
+  
+   /* class="btn btn-primary" */
+  .whatsappbtn
+   {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff; 
+    font-weight: 500;
+  }
+  .calendarbtn{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    font-weight: 500;
+
+  }
+  
+  
+ 
+  @media (max-width:426px) {
+
+    .seccontainer h2{
+        font-size: 20px;
+        margin: 10px 0px;
+       }
+       .buttongroup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+        width: 80%;
+        margin: auto;
+        padding: 20px 0px;
+      }
+    
+}
+
+
+  
+  /* ------------------------- */
+  .container{
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+  }
+  .formgroup label{
+    text-align: left;
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+.formgroup{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.formgroup input{
+    padding: 10px;
+    border: 1px solid grey;
+
+}
+.container .btn{
+    width: 30%;
+    margin: auto;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(95, 95, 246);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+      
+ 
+  
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  

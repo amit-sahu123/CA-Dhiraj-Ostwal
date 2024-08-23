@@ -1,0 +1,35 @@
+.datacontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 10px 0 45px 0;
+    justify-content: center;
+    gap: 20px;
+  }
+  .data{
+    padding: 10px;
+    /* margin: 8px; */
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .data h3{
+    margin: 15px 0px;
+    
+  }
+  @media (max-width:768px) {
+    .data{
+        width: 85%;
+      } 
+  }
+  @media (max-width:500px) {
+    .data{
+        width: 95%;
+      } 
+  }
+  @media (max-width:425px) {
+    .data{
+        width: 98%;
+      } 
+  }

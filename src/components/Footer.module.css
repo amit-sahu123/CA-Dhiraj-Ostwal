@@ -1,0 +1,97 @@
+.caFooter {
+    background-color: #0f1010;
+    color: #fff;
+    padding: 20px 0;
+}
+.footerContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footerItem {
+    width: 23%;
+    margin-bottom: 20px;
+}
+.footerItem h4 {
+    color: #f4b942;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.caList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.caList li {
+    margin-bottom: 10px;
+}
+.caList a {
+    color: #fff;
+    text-decoration: none;
+}
+.caList a:hover {
+    color: #f4b942;
+}
+.caSocialLink {
+    display: flex;
+    justify-content: flex-start;
+}
+.caSocialLink li {
+    margin-right: 10px;
+}
+.caSocialLink a {
+    color: #fff;
+    font-size: 18px;
+}
+.caSocialLink a:hover {
+    color: #f4b942;
+}
+.caOffice i,
+.caQuickLink i {
+    margin-right: 10px;
+}
+.caOffice {
+    margin-right: 30px;
+}
+.footerBot {
+    background: linear-gradient(295deg, rgba(244,81,0,1) 37%, rgba(35,11,11,1) 96%);
+    padding: 10px 0;
+    text-align: center;
+}
+.caText {
+    margin: 0;
+}
+.caTextColorYellow1 {
+    color: #f4b942;
+}
+.imgResponsive {
+     max-width: 100%;
+    height: 70px;  
+}
+.fabout img {
+    margin: 50px 0 20px 0;
+    height: 70px;
+    background-color: #bbaeae;
+}
+.icons {
+    font-size: 30px;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .footerItem {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .footerItem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

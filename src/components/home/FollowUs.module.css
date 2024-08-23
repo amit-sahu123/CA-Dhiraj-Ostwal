@@ -1,0 +1,54 @@
+/* .container{
+} */
+.containerfirst{
+    padding: 30px 20px 40px 20px;
+    text-align: center;
+    background-color: aliceblue;
+    margin-bottom: 30px;
+}
+.Fol{
+    color: orangered;
+}
+.subheading{
+    margin-bottom: 40px;
+}
+.media
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.facebook{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    box-shadow: 0 0 5px 5xp grey;
+
+}
+
+.instagram{
+    width: 45%;
+    box-shadow: 0 0 5px 5xp grey;
+}
+
+@media (max-width:769px) {
+    .media{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .facebook{
+        width: 85%;
+        margin: auto;
+    }
+    .instagram{
+        width: 85%;
+        margin: auto;
+    }
+}
+
+
+  

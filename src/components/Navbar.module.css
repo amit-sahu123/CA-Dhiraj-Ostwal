@@ -1,0 +1,169 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 10px 30px 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+  
+  .first {
+    min-width: 200px; 
+  }
+  
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+    position: relative;
+  }
+  .media{
+    display: flex;
+
+  }
+  
+  .media {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .media a{
+    color: rgb(53, 52, 52);
+  }
+  .media .yt:hover{
+    color: rgb(255, 0, 0);
+  }
+  .media .ig:hover{
+    color: rgb(205, 72, 107);
+  }
+  .media .fb:hover{
+    color: rgb(24, 119, 242);
+  }
+  .media .li:hover{
+    color: rgb(7, 98, 200);
+  }
+  .media .em:hover{
+    color: rgb(0, 79, 159);
+  }
+  
+  
+  .data ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 9px;
+  }
+  
+  .data ul li {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .data ul li a{
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+    font-weight: 500;
+  }
+  .data ul li a:hover {
+    color: orangered;
+  }
+  .menuButton{
+    padding: 0px;
+    color: black;
+    font-weight: 520;
+    /* font-size: 20px; */
+  }
+  .menuButton:hover{
+    color: orangered;
+  }
+  
+  .MenuIcon{
+    display: none;
+  }
+
+ 
+  
+  
+  @media (max-width: 768px) {
+    .media {
+      display: none;
+    }
+    .MenuIcon{
+        display: block;
+    }
+    .data  {
+      display: none;
+    }
+  }
+  @media(max-width:426px){
+    .container{
+      padding: 5px 15px 5px 20px;
+    }
+    .first {
+      min-width: 160px; 
+    }
+  }
+    @media(min-width:900px)and (max-width:1600px) {
+        .data ul {
+          gap: 22px;
+        }
+       
+    
+  }
+  @media(max-width:321px){
+    .first {
+      min-width: 150px; 
+    }
+    .container{
+      padding: 5px 5px 5px 15px;
+    }
+  }
+
+  /* -------------------------- */
+  /* .dropbtn {
+    cursor: pointer;
+  } */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdowncontent {
+    display: block;
+    position: absolute;
+    background-color: white;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid black;
+    gap: 2px;
+  }
+  
+  .dropdowncontent Link {
+    color: black;
+    padding: 4px 6px;
+    margin: 2px;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(201, 197, 197);
+    cursor: pointer;
+  }
+  .dropdowncontent a:hover{
+    color: orangered;
+  }
+  
+
+ 
+  
+ 
+  
+ 
+  

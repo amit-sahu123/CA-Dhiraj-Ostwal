@@ -1,0 +1,13 @@
+.container{
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imagecontainer{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
