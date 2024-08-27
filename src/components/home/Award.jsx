@@ -1,6 +1,6 @@
 "use client";
 import { images } from "./Constants";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Image from "next/image";
 import Description from "./Awarddes";
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
@@ -16,14 +16,14 @@ const Award = () => {
     setActiveImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      clickNext();
-    }, 5000);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [activeImage]);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     clickNext();
+  //   }, 5000);
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [activeImage]);
 
   return (
     <main className="relative grid place-items-center w-full mx-auto max-w-5xl shadow-2xl rounded-2xl my-10 " >
@@ -46,7 +46,7 @@ const Award = () => {
               src={pic.src}
               alt={pic.desc}
               layout="fill"
-              objectFit="cover"
+              objectFit="contain"
               className="w-full h-full object-cover rounded-2xl font-bold"
             />
           </div>
@@ -71,9 +71,17 @@ const Award = () => {
           color: black;
         }
         h1 {
-          font-size: 50px;
+          font-size: 45px;
           font-weight: bold;
         }
+          @media (max-width:425px)
+          {
+          h1{
+          font-size:35px;
+          font-weight:600;
+          margin-bottom:0px
+          }
+          }
       `}</style>
     </main>
   );

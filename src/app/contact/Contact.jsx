@@ -241,6 +241,7 @@
 // }
 "use client"
 import React, { useState } from 'react'
+import Banner from '../../components/Banner'
 import {
   Container,
   Typography,
@@ -318,6 +319,12 @@ const Contact = () => {
   }
 
   return (
+    <>
+   <Banner  
+      imageUrl="/assets/career3.jpg"
+      breadcrumb="Contact"
+      headline="Contact"
+      />
     <Box bgcolor='white' color='text.primary' py={3}>
       <Container>
         <Box
@@ -570,6 +577,8 @@ const Contact = () => {
         </Grid>
       </Container>
     </Box>
+    </>
+    
   )
 }
 

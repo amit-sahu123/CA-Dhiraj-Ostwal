@@ -8,7 +8,7 @@ const AdvisoryServices = () => {
 
   return (
     <div>
-        <Services title={"Advisory Services"} />
+        <Services title="Advisory Services" />
         <div className={styles.datacontainer}>
             <div className={styles.data} >
             <h3>Loans and Funding for Business</h3>

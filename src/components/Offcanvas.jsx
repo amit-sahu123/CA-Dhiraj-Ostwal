@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link';
+// import Link from 'next/link';
 import MenuIcon from '@mui/icons-material/Menu';
 
 
@@ -21,20 +21,20 @@ export default function Offcanvas() {
    <div className="offcanvas-body">
    <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                <li className="nav-item">
-                 <Link className="nav-link active" aria-current="page" href="/" prefetch={true}>Home</Link>
+                 <a className="nav-link active" aria-current="page" href="/" prefetch={true}>Home</a>
                </li>
                <li className="nav-item dropdown">
                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                    Services
                  </a>
                  <ul className="dropdown-menu">
-                   <li><Link className="dropdown-item" href="/services/tax_services" prefetch={true}> Tax Services</Link></li>
-                   <li><Link className="dropdown-item" href="/services/company_formation_reg" prefetch={true}> Company Formation and Registration </Link></li>
-                   <li><Link className="dropdown-item" href="/services/auditservices" prefetch={true}> Audit Services </Link></li>
-                   <li><Link className="dropdown-item" href="/services/drafting_agreements" prefetch={true}> Drafting and Agreement </Link></li>
-                   <li><Link className="dropdown-item" href="/services/appeals_litigations" prefetch={true}> Appeals and Litigations </Link></li>
-                   <li><Link className="dropdown-item" href="/services/advisory_services" prefetch={true}> Advisory Services</Link></li>
-                   <li><Link className="dropdown-item" href="/services/other_services" prefetch={true}> Other Services </Link></li>
+                   <li><a className="dropdown-item" href="/services/tax_services" prefetch={true}> Tax Services</a></li>
+                   <li><a className="dropdown-item" href="/services/company_formation_reg" prefetch={true}> Company Formation and Registration </a></li>
+                   <li><a className="dropdown-item" href="/services/auditservices" prefetch={true}> Audit Services </a></li>
+                   <li><a className="dropdown-item" href="/services/drafting_agreements" prefetch={true}> Drafting and Agreement </a></li>
+                   <li><a className="dropdown-item" href="/services/appeals_litigations" prefetch={true}> Appeals and Litigations </a></li>
+                   <li><a className="dropdown-item" href="/services/advisory_services" prefetch={true}> Advisory Services</a></li>
+                   <li><a className="dropdown-item" href="/services/other_services" prefetch={true}> Other Services </a></li>
                  </ul>
                </li> 
                
@@ -43,25 +43,25 @@ export default function Offcanvas() {
                  Insights
                  </a>
                  <ul className="dropdown-menu">
-                   <li><Link className="dropdown-item" href="/achievementsmore" prefetch={true}>Achievements</Link></li>
-                   <li><Link className="dropdown-item" href="/profile" prefetch={true}>Profile</Link></li>
-                   <li><Link className="dropdown-item" href="/gallerydetail" prefetch={true}>Gallery</Link></li>
-                   <li><Link className="dropdown-item" href="/news" prefetch={true}>News</Link></li>
-                   <li><Link className="dropdown-item" href="/reviews" prefetch={true}>Reviews</Link></li>
+                   <li><a className="dropdown-item" href="/achievementsmore" prefetch={true}>Achievements</a></li>
+                   <li><a className="dropdown-item" href="/profile" prefetch={true}>Profile</a></li>
+                   <li><a className="dropdown-item" href="/gallerydetail" prefetch={true}>Gallery</a></li>
+                   <li><a className="dropdown-item" href="/news" prefetch={true}>News</a></li>
+                   <li><a className="dropdown-item" href="/reviews" prefetch={true}>Reviews</a></li>
                  </ul>
                </li> 
 
                <li className="nav-item">
-                 <Link className="nav-link" href="/gallerydetail" prefetch={true}>Gallery</Link>
+                 <a className="nav-link" href="/gallerydetail" prefetch={true}>Gallery</a>
                </li>
                <li className="nav-item">
-                 <Link className="nav-link" href="/career" prefetch={true}>Carrer</Link>
+                 <a className="nav-link" href="/career" prefetch={true}>Carrer</a>
                </li>
                <li className="nav-item">
-                 <Link className="nav-link" href="/contact" prefetch={true}>Contact</Link>
+                 <a className="nav-link" href="/contact" prefetch={true}>Contact</a>
                </li>
                <li className="nav-item">
-                 <Link className="nav-link" href="/signin" prefetch={true}>Signin</Link>
+                 <a className="nav-link" href="/signin" prefetch={true}>Signin</a>
                </li>
              </ul>
    </div>

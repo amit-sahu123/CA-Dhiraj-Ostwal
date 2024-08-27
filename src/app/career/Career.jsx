@@ -2,12 +2,13 @@
 import React from 'react'
 import { useState ,useEffect } from 'react';
 import styles from "./Career.module.css"
-import Image from 'next/image'
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
 import CardTravelIcon from '@mui/icons-material/CardTravel';
+import Banner from '../../components/Banner'
+
 
 import { useSendResume } from '../../lib/react-query/queries';
 
@@ -93,29 +94,11 @@ const [formSubmitted, setFormSubmitted] = useState(false)
   return (
     <>
     <div className={styles.container}>
-      <div className={styles.first}>
-        <div className={styles.img}>
-        <Image className={styles.image} src="/assets/career3.jpg" alt="career image"   layout='fill' objectFit='cover'  />
-
-        
-        <nav className={styles.nav11}
-            style={{ '--bs-breadcrumb-divider': '>' }}
-            aria-label="breadcrumb"
-            >
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item">
-              <a href="/">Home</a>
-            </li>
-            <li className="breadcrumb-item active" aria-current="page">
-              Library
-            </li>
-          </ol>
-          <h3>Careers</h3>
-        </nav>
-
-        </div>
-       
-      </div>
+      <Banner  
+      imageUrl="/assets/career3.jpg"
+      breadcrumb="Career"
+      headline="Career"
+      />
       
        <div className={styles.secondcontainer}>
         <div className={styles.oppo}>

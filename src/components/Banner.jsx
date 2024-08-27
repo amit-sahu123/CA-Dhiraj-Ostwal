@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Banner = ({imageUrl,breadcrumb,headline}) => {
   return (
     <div className={styles.first}>
-        <div className={styles.img}>
-        <Image className={styles.image} src="/assets/career3.jpg" alt="career image"   layout='fill' objectFit='cover'  />
+      <div className={styles.img}>
+        <Image className={styles.image} src={imageUrl} alt="career image"   layout='fill' objectFit='cover'  />
 
         
         <nav className={styles.nav11}
@@ -24,9 +24,9 @@ const Banner = ({imageUrl,breadcrumb,headline}) => {
           <h3>{headline}</h3>
         </nav>
 
-        </div>
-       
       </div>
+       
+    </div>
   )
 }
 

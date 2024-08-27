@@ -37,9 +37,9 @@ const Footer = () => {
             <Image src="/assets/footer-logo.png" className={styles.imgResponsive} alt="Lohia Jain Group" width={200} height={70}  />
             <ul className={`${styles.caList} ${styles.caSocialLink}`}>
               <li>
-                <Link href={adminProfile.Facebook} target="_blank" rel="noopener noreferrer" prefetch={true}>
+                <a href={adminProfile.Facebook} target="_blank" rel="noopener noreferrer" prefetch={true}>
                   <FaFacebookF className={styles.icons} />
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href={adminProfile.LinkedIn} target="_blank" prefetch={true}>
@@ -47,27 +47,27 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href={adminProfile.Instagram} target="_blank" prefetch={true}>
+                <a href={adminProfile.Instagram} target="_blank" prefetch={true}>
                   <FaInstagram className={styles.icons} />
-                </Link>
+                </a>
               </li>
               <li>
-                <Link href={adminProfile.YouTube} target="_blank" prefetch={true}>
+                <a href={adminProfile.YouTube} target="_blank" prefetch={true}>
                   <FaYoutube className={styles.icons} />
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
           <div className={`${styles.footerItem} ${styles.quickLink}`}>
             <h4 className={`${styles.caHeading} ${styles.textUppercase}`}>Quick link</h4>
             <ul className={`${styles.caList} ${styles.caQuickLink} ${styles.textCapitalize}`}>
-              <li><Link href="/" onClick={handleButtonClick} prefetch={true}>Home</Link></li>
-              <li><Link href="/career" onClick={handleButtonClick} prefetch={true}>Career</Link></li>
-              <li><Link href="/gallerydetail" onClick={handleButtonClick}prefetch={true}>Gallery</Link></li>
-              <li><Link href="/contact" onClick={handleButtonClick} prefetch={true}>Contact</Link></li>
-              <li><Link href="/achievementsmore" onClick={handleButtonClick} prefetch={true}>Achievements</Link></li>
-              <li><Link href="/profile" onClick={handleButtonClick} prefetch={true}>Profile</Link></li>
-              <li><Link href="/news" onClick={handleButtonClick} prefetch={true}>News & Blogs</Link></li>
+              <li><a href="/" onClick={handleButtonClick} prefetch={true}>Home</a></li>
+              <li><a href="/career" onClick={handleButtonClick} prefetch={true}>Career</a></li>
+              <li><a href="/gallerydetail" onClick={handleButtonClick}prefetch={true}>Gallery</a></li>
+              <li><a href="/contact" onClick={handleButtonClick} prefetch={true}>Contact</a></li>
+              <li><a href="/achievementsmore" onClick={handleButtonClick} prefetch={true}>Achievements</a></li>
+              <li><a href="/profile" onClick={handleButtonClick} prefetch={true}>Profile</a></li>
+              <li><a href="/news" onClick={handleButtonClick} prefetch={true}>News & Blogs</a></li>
             </ul>
           </div>
           <div className={`${styles.footerItem} ${styles.office}`}>

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -66,7 +66,7 @@ export default function Navbar() {
                     <div className={styles.data}>
                         <ul className="nav">
                             <li className="nav-item">
-                                <Link href="/">Home</Link>
+                                <a href="/">Home</a>
                             </li>
                             <li className="nav-item">
                                 <Button
@@ -90,25 +90,25 @@ export default function Navbar() {
                                     }}
                                 >
                                     <MenuItem onClick={handleServicesClose} >
-                                        <Link href="/services/tax_services" style={{color:'black',textDecoration:'none'}}>Tax Services</Link>
+                                        <a href="/services/tax_services" style={{color:'black',textDecoration:'none'}}>Tax Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/company_formation_reg" style={{color:'black',textDecoration:'none'}}>Company Formation and Registration</Link>
+                                        <a href="/services/company_formation_reg" style={{color:'black',textDecoration:'none'}}>Company Formation and Registration</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/auditservices" style={{color:'black',textDecoration:'none'}}>Audit Services</Link>
+                                        <a href="/services/auditservices" style={{color:'black',textDecoration:'none'}}>Audit Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/drafting_agreements" style={{color:'black',textDecoration:'none'}}> Drafting and Agreements</Link>
+                                        <a href="/services/drafting_agreements" style={{color:'black',textDecoration:'none'}}> Drafting and Agreements</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/appeals_litigations" style={{color:'black',textDecoration:'none'}}>Appeals and Litigations</Link>
+                                        <a href="/services/appeals_litigations" style={{color:'black',textDecoration:'none'}}>Appeals and Litigations</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/advisory_services" style={{color:'black',textDecoration:'none'}}>Advisory Services</Link>
+                                        <a href="/services/advisory_services" style={{color:'black',textDecoration:'none'}}>Advisory Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <Link href="/services/other_services" style={{color:'black',textDecoration:'none'}}>Other Services</Link>
+                                        <a href="/services/other_services" style={{color:'black',textDecoration:'none'}}>Other Services</a>
                                     </MenuItem>
                                 </Menu>
                             </li>
@@ -134,31 +134,31 @@ export default function Navbar() {
                                     }}
                                 >
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <Link href="/achievementsmore" style={{color:'black',textDecoration:'none'}}>Achievements</Link>
+                                        <a href="/achievementsmore" style={{color:'black',textDecoration:'none'}}>Achievements</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <Link href="/profile" style={{color:'black',textDecoration:'none'}}>Profile</Link>
+                                        <a href="/profile" style={{color:'black',textDecoration:'none'}}>Profile</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <Link href="/gallerydetail" style={{color:'black',textDecoration:'none'}}>Gallery</Link>
+                                        <a href="/gallerydetail" style={{color:'black',textDecoration:'none'}}>Gallery</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <Link href="/news" style={{color:'black',textDecoration:'none'}}>News</Link>
+                                        <a href="/news" style={{color:'black',textDecoration:'none'}}>News</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <Link href="/reviews" style={{color:'black',textDecoration:'none'}}>Reviews</Link>
+                                        <a href="/reviews" style={{color:'black',textDecoration:'none'}}>Reviews</a>
                                     </MenuItem>
                                 </Menu>
                             </li>
                             
                             <li className="nav-item">
-                                <Link href="/career">Career</Link>
+                                <a href="/career">Career</a>
                             </li>
                             <li className="nav-item">
-                                <Link href="/contact">Contact</Link>
+                                <a href="/contact">Contact</a>
                             </li>
                             <li className="nav-item">
-                                <Link href="/signin">Signin</Link>
+                                <a href="/signin">Signin</a>
                             </li>
                         </ul>
                     </div>

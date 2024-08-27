@@ -1,33 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './Profile.module.css'
+import Banner from '../../components/Banner'
 
 export default function Profile() {
   return (
     <div>
-      <div className={styles.first}>
-        <div className={styles.img}>
-        <Image className={styles.image} src="/assets/career3.jpg" alt="career image"   layout='fill' objectFit='cover'  />
-
-        
-        <nav className={styles.nav11}
-            style={{ '--bs-breadcrumb-divider': '>' }}
-            aria-label="breadcrumb"
-            >
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item">
-              <a href="/">Home</a>
-            </li>
-            <li className="breadcrumb-item active" aria-current="page">
-              Profile
-            </li>
-          </ol>
-          <h3>Profile</h3>
-        </nav>
-
-        </div>
-       
-      </div>
+    <Banner
+     imageUrl="/assets/career3.jpg"
+     breadcrumb="Career"
+     headline="Career"
+    />
+      
+      
 
 {/* ===================== */}
 <div className={styles.container} >

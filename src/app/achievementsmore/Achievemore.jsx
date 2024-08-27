@@ -1,34 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './Achievemore.module.css'
-      
+import Banner from '../../components/Banner'     
 
 const Achievemore = () => {
   return (
   <>
-    <div className={styles.first}>
-        <div className={styles.img}>
-        <Image className={styles.image} src="/assets/career3.jpg" alt="career image"   layout='fill' objectFit='cover'  />
-
-        
-        <nav className={styles.nav11}
-            style={{ '--bs-breadcrumb-divider': '>' }}
-            aria-label="breadcrumb"
-            >
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item">
-              <a href="/">Home</a>
-            </li>
-            <li className="breadcrumb-item active" aria-current="page">
-            Achievements
-            </li>
-          </ol>
-          <h3>Achievements</h3>
-        </nav>
-
-        </div>
-       
-      </div>
+  <Banner  
+      imageUrl="/assets/career3.jpg"
+      breadcrumb="Achievements"
+      headline="Achievements"
+      />
+    
     <div className={styles.Association} id="linkachieve">
             <h2><span>Ach</span>ievements</h2>
             <div className={styles.Achievements}>
