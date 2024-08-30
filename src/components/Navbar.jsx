@@ -33,6 +33,9 @@ export default function Navbar() {
     const handleServicesClose = () => {
         setServicesAnchorEl(null);
     };
+    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered1, setIsHovered1] = useState(false);
+
    
    
 
@@ -69,17 +72,22 @@ export default function Navbar() {
                                 <a href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <Button
-                                    id="services-button"
-                                    aria-controls={openServices ? 'services-menu' : undefined}
-                                    aria-haspopup="true"
-                                    aria-expanded={openServices ? 'true' : undefined}
-                                    onClick={handleServicesClick}
-                                    className={styles.menuButton} 
+                                <a 
+                                aria-controls={openServices ? 'services-menu' : undefined}
+                                aria-haspopup="true"
+                                aria-expanded={openServices ? 'true' : undefined}
+                                onClick={handleServicesClick}
+                                onMouseEnter={() => setIsHovered(true)}  
+                                    onMouseLeave={() => setIsHovered(false)} 
+                                    style={{
+                                        color: isHovered ? 'orangered' : 'rgb(23, 22, 22)',
+                                        
+                                    }}
                                 >
-                                    Services
-                                    <ArrowDropDownIcon />
-                                </Button>
+                                   Services
+                                   <ArrowDropDownIcon />
+                                </a>
+                                
                                 <Menu
                                     id="services-menu"
                                     anchorEl={servicesAnchorEl}
@@ -90,40 +98,48 @@ export default function Navbar() {
                                     }}
                                 >
                                     <MenuItem onClick={handleServicesClose} >
-                                        <a href="/services/tax_services" style={{color:'black',textDecoration:'none'}}>Tax Services</a>
+                                        <a href="/services/tax_services" className={styles.menudata} >Tax Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/company_formation_reg" style={{color:'black',textDecoration:'none'}}>Company Formation and Registration</a>
+                                        <a href="/services/company_formation_reg" className={styles.menudata} >Company Formation and Registration</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/auditservices" style={{color:'black',textDecoration:'none'}}>Audit Services</a>
+                                        <a href="/services/auditservices" className={styles.menudata} >Audit Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/drafting_agreements" style={{color:'black',textDecoration:'none'}}> Drafting and Agreements</a>
+                                        <a href="/services/drafting_agreements" className={styles.menudata} > Drafting and Agreements</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/appeals_litigations" style={{color:'black',textDecoration:'none'}}>Appeals and Litigations</a>
+                                        <a href="/services/appeals_litigations" className={styles.menudata} >Appeals and Litigations</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/advisory_services" style={{color:'black',textDecoration:'none'}}>Advisory Services</a>
+                                        <a href="/services/advisory_services" className={styles.menudata} >Advisory Services</a>
                                     </MenuItem>
                                     <MenuItem onClick={handleServicesClose}>
-                                        <a href="/services/other_services" style={{color:'black',textDecoration:'none'}}>Other Services</a>
+                                        <a href="/services/other_services" className={styles.menudata} >Other Services</a>
                                     </MenuItem>
                                 </Menu>
                             </li>
                             <li className="nav-item">
-                                <Button
-                                    id="insights-button"
+                            
+                                <a
                                     aria-controls={openInsights ? 'insights-menu' : undefined}
                                     aria-haspopup="true"
                                     aria-expanded={openInsights ? 'true' : undefined}
                                     onClick={handleInsightsClick}
-                                    className={styles.menuButton} 
+                                    onMouseEnter={() => setIsHovered1(true)}  
+                                    onMouseLeave={() => setIsHovered1(false)} 
+                                    style={{
+                                        color: isHovered1 ? 'orangered' : 'rgb(23, 22, 22)',
+                                        
+                                    }}
                                 >
                                     Insights
                                     <ArrowDropDownIcon />
-                                </Button>
+                                </a>
+
+
+                                
                                 <Menu
                                     id="insights-menu"
                                     anchorEl={insightsAnchorEl}
@@ -133,33 +149,35 @@ export default function Navbar() {
                                         'aria-labelledby': 'insights-button',
                                     }}
                                 >
-                                    <MenuItem onClick={handleInsightsClose}>
-                                        <a href="/achievementsmore" style={{color:'black',textDecoration:'none'}}>Achievements</a>
+
+                                    <MenuItem onClick={handleInsightsClose} >
+                                        <a href="/profile" className={styles.menudata} >Profile</a>
                                     </MenuItem>
+
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <a href="/profile" style={{color:'black',textDecoration:'none'}}>Profile</a>
+                                        <a href="/achievementsmore" className={styles.menudata} >Achievements</a>
                                     </MenuItem>
+                                  
+                                  
                                     <MenuItem onClick={handleInsightsClose}>
-                                        <a href="/gallerydetail" style={{color:'black',textDecoration:'none'}}>Gallery</a>
-                                    </MenuItem>
-                                    <MenuItem onClick={handleInsightsClose}>
-                                        <a href="/news" style={{color:'black',textDecoration:'none'}}>News</a>
-                                    </MenuItem>
-                                    <MenuItem onClick={handleInsightsClose}>
-                                        <a href="/reviews" style={{color:'black',textDecoration:'none'}}>Reviews</a>
+                                        <a href="/reviews" className={styles.menudata}>Reviews</a>
                                     </MenuItem>
                                 </Menu>
                             </li>
-                            
+
                             <li className="nav-item">
-                                <a href="/career">Career</a>
+                                <a href="/gallerydetail" >Gallery</a>
                             </li>
+
                             <li className="nav-item">
-                                <a href="/contact">Contact</a>
+                                <a href="/contact" >Contact</a>
                             </li>
+
                             <li className="nav-item">
-                                <a href="/signin">Signin</a>
+                                <a href="/career" >Career</a>
                             </li>
+                           
+                        
                         </ul>
                     </div>
                 </div>

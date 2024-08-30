@@ -28,7 +28,7 @@ const Award = () => {
   return (
     <main className="relative grid place-items-center w-full mx-auto max-w-5xl shadow-2xl rounded-2xl my-10 " >
       <h1 className="text-2xl font-bold mb-6">
-        <span className="red">Awa</span>
+        <span style={{color:'orangered'}}>Awa</span>
         <span className="black">rd</span>
       </h1>
       
@@ -64,9 +64,7 @@ const Award = () => {
         clickPrev={clickPrev}  
       />
       <style jsx>{`
-        .red {
-          color: red;
-        }
+       
         .black {
           color: black;
         }

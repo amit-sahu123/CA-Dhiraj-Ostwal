@@ -95,14 +95,14 @@ const [formSubmitted, setFormSubmitted] = useState(false)
     <>
     <div className={styles.container}>
       <Banner  
-      imageUrl="/assets/career3.jpg"
+      imageUrl="/assets/carrer.jpg"
       breadcrumb="Career"
       headline="Career"
       />
       
        <div className={styles.secondcontainer}>
         <div className={styles.oppo}>
-              <h2>CAREER <span style={{color:'#2a88fa'}}>OPPORTUNITIES</span></h2>
+              <h2 >CAREER <span style={{color:'#2a88fa'}}>OPPORTUNITIES</span></h2>
               <p>We are proud of our company and the people who work here. They help us set new standards for the real estate industry. Our team ensures customer satisfaction and construction quality, making us a leading real estate company in Pune.
               <br /> <br/>We seek work-driven, goal-oriented individuals who can help us excel. If you are an explorer looking for opportunities, join us.</p>
               <img src="assets/careers.png" alt="" />

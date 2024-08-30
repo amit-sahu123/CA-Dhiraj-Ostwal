@@ -321,7 +321,7 @@ const Contact = () => {
   return (
     <>
    <Banner  
-      imageUrl="/assets/career3.jpg"
+      imageUrl="/assets/carrer.jpg"
       breadcrumb="Contact"
       headline="Contact"
       />
@@ -476,7 +476,7 @@ const Contact = () => {
                       Mon-Fri from 8am to 5pm.
                     </Typography>
                     <Typography variant='body2' color='primary'>
-                      +1 (555) 000-0000
+                      +91 7020045454
                     </Typography>
                   </Box>
                 </Box>

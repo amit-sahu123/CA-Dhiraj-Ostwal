@@ -162,12 +162,10 @@ gap: 10px;
     .formcontainer{
         width: 100%;
         padding: 10px 0px;
-        /* display: flex; */
-        /* justify-content; */
+        
     }
     .formparent{
         width: 100%;
-        /* padding: 10px 0px;  */
     }
 }
  

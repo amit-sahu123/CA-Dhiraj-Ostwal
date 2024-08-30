@@ -7,7 +7,7 @@ const Gallerydetail = () => {
   return (
     <div>
         <Banner  
-      imageUrl="/assets/career3.jpg"
+      imageUrl="/assets/carrer.jpg"
       breadcrumb="GAllery"
       headline="Gallery"
       />

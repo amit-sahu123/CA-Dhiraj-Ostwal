@@ -68,12 +68,12 @@ export default function Carousel() {
       
        <div className="carousel-inner">
         {bannerData?.map((banner, index) => (
-          <div key={banner.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-            <div style={{ position: 'relative', height: '75vh', width: '100vw' }}>
+          <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+            <div style={{ position: 'relative', height: '86vh', width: '100vw' }}>
               <Image
                 src={banner.url}
                 className="d-block w-100"
-                alt={banner.Title}
+                alt="pics"
                 layout="fill"
                 objectFit="cover"
               />

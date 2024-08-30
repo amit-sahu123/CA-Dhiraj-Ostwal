@@ -1,10 +1,12 @@
-"use client";
+// "use client";
 // import React, { useState, useEffect } from 'react';
 // import styles from './Youtube.module.css';
 // import { useGetAllYoutube } from '../../lib/react-query/queries';
 // import Spinner from '../../loading/Spinner';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+// import { readFileSync } from "fs";
 
 // export default function Youtube() {
 //   const { data: youtubeData, isLoading: isLoadingYoutube } = useGetAllYoutube();
@@ -91,65 +93,83 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 //     </div>
 //   );
 // }
+// ----------------------------------------------------------
 
-// "use client"
-import React,{useState} from 'react';
+
+"use client";
+import React, { useState } from "react";
 import styles from './Youtube.module.css';
-// import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-// import SkipNextIcon from '@mui/icons-material/SkipNext';
+import Image from "next/image";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-const videos=[
-    "https://www.youtube.com/embed/BGKH1FJ2YkQ?si=LdAex3ytJNpvbG1U&amp;start=3",
-    "https://www.youtube.com/embed/ftVppmrUrsU?si=yDqmuStFteqy0LaD&amp;start=3", 
-    "https://www.youtube.com/embed/L-U8XJAzJak?si=pi_JpP7hlVjTwXug&amp;start=3", 
-    "https://www.youtube.com/embed/ypZi5GH6YHY?si=Layi83vSSiSRW66h&amp;start=3" ,
-    "https://www.youtube.com/embed/Py_UysMtEPI?si=FRv_IGhqmrJD7eb_&amp;start=3",
-];
+const Youtube = () => {
+  const data = [
+    {
+      image: "/assets/youtube1.png",
+      Description: "How to start your own business"
+    },
+    {
+      image: "/assets/youtube2.png",
+      Description: "Leadership"
+    },
+    {
+      image: "/assets/youtube3.png",
+      Description: "How to fund your Business"
+    },
+    {
+      image: "/assets/youtube4.png",
+      Description: "How to grow your Business"
+    },
+    {
+      image: "/assets/youtube5.png",
+      Description: "How to make right Decisions"
+    }
+  ];
 
-export default function Youtube() {
-    const[currentVideoIndex,setCurrentVideoIndex]=useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const handlePrev = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex === 0 ? videos.length - 1 : prevIndex - 1));
-      };
-    
-      const handleNext = () => {
-        setCurrentVideoIndex((prevIndex) => (prevIndex === videos.length - 1 ? 0 : prevIndex + 1));
-      };
-    
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? data.length - 1 : prevIndex - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
+  };
+
   return (
     <div className={styles.container}>
-      <div className={styles.youtubetext}>
-        <h3> YouTube </h3>
+      <div className={styles.textcontainer}>
+        <h2>YouTube</h2>
       </div>
-      <div className={styles.videoContainer}>
-        <iframe
-         width='100%'
-         height='100%'
-         src={videos[currentVideoIndex]}
-          
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div>
-        
-      <div className={styles.controls}>
-          <button className={styles.controlButton1} onClick={handlePrev}>
-            {/* <span className="carousel-control-prev-icon" ></span> */}
-            <ArrowBackIosIcon/>
-          </button>
-          <button className={styles.controlButton2} onClick={handleNext}>
-           <ArrowForwardIosIcon/>
-            {/* <span className="carousel-control-next-icon" ></span> */}
-          </button>
+      <div className={styles.imageWrapper}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={data[currentIndex].image}
+            alt={data[currentIndex].Description}
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
-
-      
-
+      </div>
+      <p className={styles.description}>
+        <strong> {data[currentIndex].Description}</strong>
+       
+      </p>
+      <div className={styles.controls}>
+        <button className={styles.controlButton} onClick={handlePrev}>
+          <ArrowBackIosIcon />
+        </button>
+        <button className={styles.controlButton} onClick={handleNext}>
+          <ArrowForwardIosIcon />
+        </button>
+      </div>
     </div>
   );
-}
+};
+
+export default Youtube;
+
+
 
 

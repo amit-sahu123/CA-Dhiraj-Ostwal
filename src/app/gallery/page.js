@@ -1,10 +1,12 @@
 import React from 'react'
-import GalleryContainer from './GalleryContainer'
+// import GalleryContainer from './GalleryContainer'
+import Gallery from './Gallery'
 
 const Gallery11 = () => {
   return (
     <div>
-      <GalleryContainer/>
+      <Gallery/>
+      {/* <GalleryContainer/> */}
     </div>
   )
 }

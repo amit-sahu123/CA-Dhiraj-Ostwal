@@ -49,7 +49,7 @@ const Photo = ({ src, alt, index }) => {
         .photo:hover,
         .photo.clicked {
           transform: scale(2.15);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly increased shadow on hover */
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
         }
         @media (max-width: 768px) {
           .photo {

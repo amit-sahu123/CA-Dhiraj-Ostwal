@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Banner.module.css'
 import Image from 'next/image'
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Banner = ({imageUrl,breadcrumb,headline}) => {
   return (
@@ -15,9 +16,10 @@ const Banner = ({imageUrl,breadcrumb,headline}) => {
             >
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="/">Home</a>
+              <a  style={{textDecoration:'none',color:'white'}} href="/">Home <ArrowForwardIosIcon fontSize='19px'/> </a>
             </li>
-            <li className="breadcrumb-item active" aria-current="page">
+             
+            <li className="breadcrumb-item active" aria-current="page" style={{color:'white'}}>
               {breadcrumb}
             </li>
           </ol>

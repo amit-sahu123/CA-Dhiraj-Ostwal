@@ -1,8 +1,0 @@
-export default function AdminLayout({children}){
-return(
-    <div>
-
-        
-    </div>
-)
-}

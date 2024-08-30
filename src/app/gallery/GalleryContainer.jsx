@@ -25,9 +25,6 @@ const GalleryContainer = () => {
         .gallery-container {
           text-align: center;
           padding: 20px;
-          background:rgb(223, 227, 223) ; /* Updated to white */
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for container */
-          border-radius: 10px; /* Rounded corners for a modern look */
         }
         .photos {
           display: flex;

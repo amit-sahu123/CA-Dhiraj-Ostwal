@@ -1,5 +1,5 @@
 .caFooter {
-    background-color: #0f1010;
+    background-color: #0f1010;                                   
     color: #fff;
     padding: 20px 0;
 }
@@ -19,10 +19,13 @@
 }
 .footerItem h4 {
     color: #f4b942;
-    margin-bottom: 15px;
+    margin-bottom: 15px ;
+    margin-left: 10px;
     font-size: 18px;
     text-transform: uppercase;
 }
+/* ---------- */
+
 .caList {
     list-style: none;
     padding: 0;
@@ -30,7 +33,11 @@
 }
 .caList li {
     margin-bottom: 10px;
+    display: flex;        
+    align-items: center;  
+
 }
+
 .caList a {
     color: #fff;
     text-decoration: none;
@@ -95,3 +102,6 @@
         margin-bottom: 20px;
     }
 }
+
+
+  

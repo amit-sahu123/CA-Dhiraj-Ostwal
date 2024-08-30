@@ -1,16 +1,15 @@
 .Association {
-    padding: 15px 15px;
-    background-color: rgb(223, 227, 223);
+    padding: 15px;
 }
 .Association h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 36px;
     font-weight: bold;
-    margin: 18px 0px 90px 0px;
+    margin: 18px 0px 100px 0px;
 }
 .Achievements {
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,11 +21,10 @@
 }
 
 .NewsBox {
-    width: 31%;
-    /* margin: 10px 0px 10px 0px; */
+    width: 20%;
     background: #fff;
     border-radius: 15px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     box-shadow: 4px 4px 30px #d3d3d3;
     margin-bottom: 4rem;
@@ -49,26 +47,28 @@
     transition: .7s;
 }
 
+
+
+.btnbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    margin-bottom: 25px;
+}
 .readbtn {
     padding: 10px 20px;
     border-radius: 50px;
     font-weight: 600;
     background-color: orangered;
 }
-.btnbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(223, 227, 223);
-    box-shadow: none;
-    margin-bottom: 25px;
-
-
-}
 
 .readbtn:hover {
-    background-color: var(--btncolor);
     color: white;
+}
+.btnbox a{
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width:900px) and (min-width:600px) {
@@ -96,6 +96,8 @@
     }
     .Association h2 {
         font-size: 25px;
+        margin: 18px 0px 70px 0px;
     }
 }
+
 

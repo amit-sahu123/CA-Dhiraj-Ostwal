@@ -8,7 +8,7 @@ const Appeals_litigations = () => {
 
   return (
     <div>
-        <Services title={"Appeals_litigations"} />
+        <Services title={"Appeals litigations"} />
         <div className={styles.datacontainer}>
             <div className={styles.data} >
             <h3>Appeals</h3>

@@ -1,8 +1,9 @@
+"use client"
 import React, { useState } from "react";
 import Link from "next/link";
-import Head from "next/head";
+import styles from "./Blog.module.css";
 import Modal from "../services/Enquery";
-import styles from './Blog.module.css'; // Assuming you renamed your CSS file to a CSS module
+import Head from "next/head";
 
 const IncomeTax = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -21,7 +22,7 @@ const IncomeTax = () => {
         />
         <meta
           name="keywords"
-          content="income tax, Income tax e filing, Income tax return, income tax slab, income tax surcharge, income tax act, income tax online, due date of advance tax, income tax filing date, tax consultant near me, income tax 2.0, income tax meaning, income tax rate, income tax rules, income tax notice, income tax registration, income tax deduction, income tax office pune, income tax benefit on home loan, income tax itr, income tax filing india, tax return filing online, income tax gst, tax return prepare"
+          content="income tax, Income tax e filing, Income tax return, income tax slab, income tax surcharge, income tax act, income tax return filing online, income tax online, due date of advance tax, advance tax payment dates, income tax filing date, tax consultant near me, tax consultants, income tax 2.0, income tax meaning, income tax rate, income tax rules, income tax notice, income tax of india, income tax registration, income tax deduction, income tax office pune, income tax benefit on home loan, income tax itr, income tax return filing meaning, income tax filing india, tax return filing online, income tax return filing portal, income tax gst, tax return prepare"
         />
       </Head>
       <div className={styles.mainContainer}>
@@ -41,28 +42,29 @@ const IncomeTax = () => {
             <p>
               Understanding income tax is crucial for every Indian citizen. Whether you're a salaried employee, business owner, or freelancer, knowing the basics of income tax can help you manage your finances better and stay compliant with the law. In this comprehensive guide, we'll explore the fundamentals of income tax in India, covering everything from the basics to advanced concepts.
             </p>
+
             <h1>Income Tax Explained</h1>
             <h3>What is Income Tax?</h3>
             <p>
               Income tax is a direct tax levied by the government on the income earned by individuals and businesses during a financial year. The Income Tax Act of 1961 governs the rules and regulations surrounding taxation in India.
             </p>
             <p>
-              <span>Income tax meaning:</span>It's a mandatory contribution to state revenue, calculated as a percentage of an individual's or entity's income.
+              <span>Income tax meaning:</span> It's a mandatory contribution to state revenue, calculated as a percentage of an individual's or entity's income.
             </p>
             <p>
-              <span>Income tax of India:</span>The Income Tax Department, under the Ministry of Finance, is responsible for administering and collecting income tax in India.
+              <span>Income tax of India:</span> The Income Tax Department, under the Ministry of Finance, is responsible for administering and collecting income tax in India.
             </p>
             <p>
-              <span>Income tax return:</span>An income tax return (ITR) is a form submitted to the Income Tax Department declaring details of taxable income and tax paid during a financial year.
+              <span>Income tax return:</span> An income tax return (ITR) is a form submitted to the Income Tax Department declaring details of taxable income and tax paid during a financial year.
             </p>
             <p>
-              <span>Income tax return filing meaning:</span>It's the process of submitting your income details and tax calculations to the Income Tax Department, either online or offline.
+              <span>Income tax return filing meaning:</span> It's the process of submitting your income details and tax calculations to the Income Tax Department, either online or offline.
             </p>
             <h3>Understanding Tax Slabs and Surcharges</h3>
             <p>
               <span>Income tax slab:</span> India follows a progressive tax system with different tax rates for various income brackets. As of the latest update, the tax slabs are:
             </p>
-            <div className={styles.unorderedList}>
+            <div className={styles.unordered1}>
               <ul>
                 <li>Up to ₹2.5 lakh: No tax</li>
                 <li>₹2.5 lakh to ₹5 lakh: 5%</li>
@@ -78,14 +80,14 @@ const IncomeTax = () => {
             </p>
             <h3>Do You Need to Register for Income Tax?</h3>
             <p>
-              <span>Income tax registration:</span>If your annual income exceeds the basic exemption limit (₹2.5 lakh for individuals under 60 years), you need to register for income tax. This involves obtaining a Permanent Account Number (PAN) and registering on the income tax e-filing portal.
+              <span>Income tax registration:</span> If your annual income exceeds the basic exemption limit (₹2.5 lakh for individuals under 60 years), you need to register for income tax. This involves obtaining a Permanent Account Number (PAN) and registering on the income tax e-filing portal.
             </p>
             <h1>E-filing Made Easy</h1>
             <h3>A Step-by-Step Guide to E-filing Your Income Tax Return</h3>
             <p>
               <span>Income tax e-filing</span> has been made mandatory for most taxpayers. Here's a simplified guide:
             </p>
-            <div className={styles.unorderedList}>
+            <div className={styles.unordered1}>
               <ul>
                 <li>Log in to the income tax e-filing portal</li>
                 <li>Select the appropriate ITR form</li>
@@ -100,13 +102,12 @@ const IncomeTax = () => {
             </p>
             <h3>Crucial Deadlines to Remember</h3>
             <p>
-              <span>Income tax filing date:</span> For most individual taxpayers, the due date for filing the return of income is July 31, immediately following the concerned financial year.
+              <span>Income tax filing date: </span> For most individual taxpayers, the due date for filing the return of income is July 31, immediately following the concerned financial year.
             </p>
             <p>
-              <span>Due date of advance tax and advance tax payment dates:</span>
-              Advance tax is payable in four installments:
+              <span>Due date of advance tax and advance tax payment dates:</span> Advance tax is payable in four installments:
             </p>
-            <div className={styles.unorderedList}>
+            <div className={styles.unordered2}>
               <ul>
                 <li>June 15 (15%)</li>
                 <li>September 15 (45%)</li>
@@ -117,9 +118,9 @@ const IncomeTax = () => {
             <h1>Key Income Tax Concepts</h1>
             <h3>Boost Your Savings: Understanding Income Tax Deductions</h3>
             <p>
-              <span>Income tax deduction</span> Deductions reduce your taxable income. Some popular deductions include:
+              <span>Income tax deduction:</span> Deductions reduce your taxable income. Some popular deductions include:
             </p>
-            <div className={styles.unorderedList}>
+            <div className={styles.unordered3}>
               <ul>
                 <li>Section 80C: Investments in PPF, ELSS, life insurance premiums (up to ₹1.5 lakh)</li>
                 <li>Section 80D: Health insurance premiums</li>
@@ -141,61 +142,62 @@ const IncomeTax = () => {
             <h1>Beyond Income Tax</h1>
             <h3>Business Tax in India: A Glimpse</h3>
             <p>
-              <span>Business tax in India</span> encompasses various taxes like GST, TDS, and corporate tax. Staying compliant with these taxes is essential for businesses to avoid legal issues and penalties.
+              <span>Business tax in India:</span> This encompasses various taxes that businesses must pay, including corporate tax, Goods and Services Tax (GST), and professional tax.
             </p>
-            <h3>How We Can Help</h3>
+            <h3>Difference Between Income Tax and Business Tax (GST)</h3>
             <p>
-              Our CA firm offers comprehensive tax solutions tailored to your needs. Whether you need assistance with tax filing, tax planning, or dealing with tax notices, our expert team is here to help. We specialize in providing personalized advice and support to individuals, businesses, and organizations.
+              While income tax is levied on the income earned, GST is an indirect tax on the supply of goods and services. Businesses need to comply with both income tax and GST regulations.
+            </p>
+            <h1>Tax Management Strategies</h1>
+            <h3>High-level Insights into General Tax Planning Principles</h3>
+            <p>
+              <span>Tax management in India:</span> Effective tax management involves optimizing your tax liability through proper planning, taking advantage of deductions and exemptions, and ensuring timely compliance with all tax-related obligations.
             </p>
           </div>
-        
-                <div className={styles.Ads}>
-                <div className={styles.blogButton}>
-                    <div className={styles.whatsappButton}>
-                    <button
-                        className={styles.blogBtn}
-                        onClick={() =>
-                        window.open(
-                            "https://wa.me/7020045454?text=Hi%20there,%20I'm%20interested%20in%20your%20services.",
-                            "_blank",
-                            "noopener noreferrer"
-                        )
-                        }
-                    >
-                        <img
-                        width="25"
-                        height="25"
-                        src="https://img.icons8.com/color/48/whatsapp--v1.png"
-                        alt="whatsapp"
-                        />
-                        Connect with WhatsApp
-                    </button>
-                    </div>
-                    <div className={styles.appointmentButton}>
-                    <button
-                        className={styles.blogBtn}
-                        onClick={() => setModalOpen(true)}
-                    >
-                        <img
-                        width="25"
-                        height="25"
-                        src="https://img.icons8.com/color/48/tear-off-calendar--v1.png"
-                        alt="appointment"
-                        />
-                        Book an Appointment
-                    </button>
-                    </div>
-                </div>
-                </div>
+          <div className={styles.Ads} >
+            <div className={styles.blogButton}   >
+              <div className={styles.whatsappButton} >
+                <button
 
-         </div>
+                  className={styles.blogBtn}
+                  onClick={() =>
+                    window.open(
+                      "https://wa.me/7020045454?text=Hi%20there,%20I'm%20interested%20in%20your%20services.",
+                      "_blank",
+                      "noopener noreferrer"
+                    )
+                  }
+                >
+                  <img
+                    width="25"
+                    height="25"
+                    src="https://img.icons8.com/color/48/whatsapp--v1.png"
+                    alt="whatsapp"
+                  />
+                  Connect with WhatsApp
+                </button>
+              </div>
+              <div className={styles.appointmentButton}>
+                <button
+                  className={styles.blogBtn}
+                  onClick={() => setModalOpen(true)}
+                >
+                  <img
+                    width="25"
+                    height="25"
+                    src="https://img.icons8.com/color/48/tear-off-calendar--v1.png"
+                    alt="appointment"
+                  />
+                  Book an Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
       </div>
+      {isModalOpen && <Modal closeModal={() => setModalOpen(false)} />}
 
-      {
-        isModalOpen&& (
-            <Modal closeModal={() => setModalOpen(false)}/>
-        )
-      }
     </>
   );
 };

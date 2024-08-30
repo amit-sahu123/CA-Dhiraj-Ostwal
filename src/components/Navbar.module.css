@@ -3,12 +3,13 @@
     justify-content: space-between;
     align-items: center;
     background-color:white;
-    padding: 10px 30px 10px 30px;
+    padding: 15px 30px 15px 30px;
     width: 100%;
     box-sizing: border-box;
     position: sticky;
     top: 0px;
     z-index: 10;
+    height: 105px; 
   }
   
   .first {
@@ -30,7 +31,7 @@
   
   .media {
     display: flex;
-    gap: 10px;
+    gap: 14px;
     margin-bottom: 12px;
   }
   .media a{
@@ -63,29 +64,33 @@
   
   .data ul li {
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
   }
   .data ul li a{
     text-decoration: none;
     color: rgb(23, 22, 22);
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
   }
   .data ul li a:hover {
     color: orangered;
   }
-  .menuButton{
-    padding: 0px;
-    color: black;
-    font-weight: 520;
-    /* font-size: 20px; */
-  }
-  .menuButton:hover{
-    color: orangered;
-  }
+ 
+ 
   
   .MenuIcon{
     display: none;
+  }
+
+  .menudata{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
   }
 
  
@@ -125,45 +130,3 @@
       padding: 5px 5px 5px 15px;
     }
   }
-
-  /* -------------------------- */
-  /* .dropbtn {
-    cursor: pointer;
-  } */
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdowncontent {
-    display: block;
-    position: absolute;
-    background-color: white;
-    min-width: 260px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border: 1px solid black;
-    gap: 2px;
-  }
-  
-  .dropdowncontent Link {
-    color: black;
-    padding: 4px 6px;
-    margin: 2px;
-    text-decoration: none;
-    display: block;
-    background-color: rgb(201, 197, 197);
-    cursor: pointer;
-  }
-  .dropdowncontent a:hover{
-    color: orangered;
-  }
-  
-
- 
-  
- 
-  
- 
-  

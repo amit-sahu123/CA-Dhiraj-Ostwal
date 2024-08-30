@@ -9,7 +9,7 @@ const CompanyFormation = () => {
 
   return (
     <div>
-        <Services title={" Company Formation"} />
+        <Services title={" Company Formation and Registration"} />
         <div className={styles.datacontainer}>
             <div className={styles.data} >
             <h3>Company Formation</h3>

@@ -5,19 +5,19 @@ const GalleryHeader = () => {
   return (
     <div className="gallery-header">
       <h1>
-        <span className="red">Even</span>
+        <span style={{color:"orangered"}}>Even</span>
         <span className="black">ts gallery</span>
       </h1>
       <style jsx>{`
         .gallery-header {
-          margin-bottom: 20px;
+          margin-bottom: 30px;
         }
         h1 {
           font-size: 50px;
           font-weight: bold;
         }
         .red {
-          color: red;
+          color: oranged;
         }
         .black {
           color: black;

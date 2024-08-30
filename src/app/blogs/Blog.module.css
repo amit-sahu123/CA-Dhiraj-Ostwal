@@ -29,7 +29,6 @@
   
   .links {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
     margin-bottom: 30px;
   }
@@ -144,7 +143,7 @@
     color: #758694;
     text-decoration: underline;
   }
-
+/* ---------------------- */
   
   
   .blogButton {
@@ -185,6 +184,19 @@
   /* .whatsappButton, .appointmentButton { */
     /* Add specific styles if needed */
   /* } */
+
+  .links {
+    display: block;
+    width: 50%;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .links h1 {
+    margin-bottom: 26px;
+    color: #758694;
+    text-decoration: underline;
+  }
   
   
   @media (max-width: 768px) {
@@ -209,7 +221,7 @@
       font-size: 1.2em;
     }
   
-    .blogbtn {
+    .blogBtn {
       width: 100%; /* Make the button take full width */
     }
   }
@@ -220,7 +232,7 @@
       flex-direction: column-reverse;
     }
   
-    .blogbtn{
+    .blogBtn{
         height: 50px;
       }
   }

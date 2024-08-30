@@ -7,7 +7,8 @@ import Achievements from "../components/home/Achievements";
 import Award from "../components/home/Award"
 import GalleryContainer from "./gallery/GalleryContainer"
 import Employee from "../components/home/Employee"
-// import Spinner from '../loading/Spinner'
+
+import Tds from "../app/blogs/Gst"
 
 export default function Home() {
 
@@ -23,6 +24,10 @@ export default function Home() {
         <GalleryContainer/>  
         <Award/>
         <FollowUs/>   
+
+        {/* <Tds/> */}
+        
+
 
         
 

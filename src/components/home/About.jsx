@@ -20,7 +20,7 @@ export default function About() {
         <div className={styles.text}>
          <h4 className={styles.h11}> <span className={styles.orange}>WHO</span> WE ARE</h4>
          <h4 className={styles.h33}>  B.COM,CA,CMA And SET </h4>
-         <p>     CA Dhiraj Ostwal is an experienced and professional CA
+         <p style={{fontSize:'18px'}}>   <strong>CA Dhiraj Ostwal</strong>  is an experienced and professional CA
              with more than 25 years in Business Coaching, advisory and,
               strategy planning. He has worked on a global level in countries like 
               America, Australia, New Zealand, and Singapore. With his extraordinary rich core business experience, he has helped various business houses in India by guiding 
