@@ -5,7 +5,7 @@ import Youtube from "../components/home/Youtube";
 import FollowUs from "../components/home/FollowUs";
 import Achievements from "../components/home/Achievements";
 import Award from "../components/home/Award"
-import GalleryContainer from "./gallery/GalleryContainer"
+import GalleryContainer from "./gallery/Gallery11"
 import Employee from "../components/home/Employee"
 
 import Tds from "../app/blogs/Gst"
