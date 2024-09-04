@@ -59,8 +59,6 @@ const [formSubmitted, setFormSubmitted] = useState(false)
           file:formData.file,
           interest:formData.interest
         }
-        console.log(data)
-        console.log("i am amit")
 
 
         try{
@@ -139,7 +137,6 @@ const [formSubmitted, setFormSubmitted] = useState(false)
           <div className={`${styles.formgroup} ${styles.p11}`}>
   <CardTravelIcon color="primary" />
   
-  {/* Hide the actual file input */}
   <input
     type="file"
     id="file"

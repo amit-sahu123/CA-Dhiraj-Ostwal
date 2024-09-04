@@ -1,8 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-// import { useGetAllBanner } from '../../lib/react-query/queries';
-// import Spinner from '../../loading/Spinner';
+
 
 const bannerData = [
   {
@@ -38,19 +37,10 @@ const bannerData = [
 ];
 
 export default function Carousel() {
-  // const {
-  //   data: bannerData,
-  //   isLoading: isLoadingBanner,
-  //   error,
-  //   refetch,
-  // } = useGetAllBanner();
-
-  // if (isLoadingBanner) return <Spinner/>;
-  // if (error) return <h2 style={{textAlign:'center', marginTop:'30px'}}>Error loading banners</h2>;
 
   return (
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-      {/* Carousel Indicators */}
+      
         <div className="carousel-indicators " >
         {bannerData?.map((_, index) => (
           <button style={{backgroundColor:'orangered'}}
@@ -80,8 +70,8 @@ export default function Carousel() {
             </div>
             <div className="carousel-caption d-block" style={{ color: 'white', bottom: '20px' }}>
               <h1 >{banner.header}</h1>
-              <h4 style={{marginBottom:'20px'}}>{banner.text} </h4>
-                <button
+              <h4 style={{marginBottom:'50px'}}>{banner.text} </h4>
+                {/* <button
                  style={{
                    backgroundColor: 'orangered',
                    padding: '10px 20px',
@@ -93,7 +83,7 @@ export default function Carousel() {
                  }} 
                >
                  Read More
-               </button>  
+               </button>   */}
             </div>
           </div>
         ))}
@@ -114,5 +104,4 @@ export default function Carousel() {
     </div>
   );
 }
-
 
