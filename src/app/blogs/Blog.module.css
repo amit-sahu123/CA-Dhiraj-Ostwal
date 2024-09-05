@@ -151,14 +151,14 @@
     flex-direction: column;
     margin: 10px;
     gap: 10px;
-    width: 100%; /* Ensure buttons take up full width on small screens */
+    width: 100%; 
   }
   
   .blogBtn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px; /* Set a max-width for larger screens */
+    width: 200px; 
     height: 100px;
     background-color: #ff7f3e;
     color: #fff;
@@ -180,10 +180,6 @@
     background-color: #ff9f3e;
   }
   
-  /* Optional styles for nested elements */
-  /* .whatsappButton, .appointmentButton { */
-    /* Add specific styles if needed */
-  /* } */
 
   .links {
     display: block;
@@ -222,7 +218,7 @@
     }
   
     .blogBtn {
-      width: 100%; /* Make the button take full width */
+      width: 100%; 
     }
   }
   

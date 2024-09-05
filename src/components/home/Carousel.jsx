@@ -71,19 +71,7 @@ export default function Carousel() {
             <div className="carousel-caption d-block" style={{ color: 'white', bottom: '20px' }}>
               <h1 >{banner.header}</h1>
               <h4 style={{marginBottom:'50px'}}>{banner.text} </h4>
-                {/* <button
-                 style={{
-                   backgroundColor: 'orangered',
-                   padding: '10px 20px',
-                   borderRadius: '40px',
-                   border: 'none',
-                   color: 'white',
-                   cursor: 'pointer',
-                   marginBottom:'30px'
-                 }} 
-               >
-                 Read More
-               </button>   */}
+               
             </div>
           </div>
         ))}
@@ -91,7 +79,6 @@ export default function Carousel() {
 
 
 
-      {/* Carousel Controls */}
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true" style={{backgroundColor:'orangered' }}></span>
         <span className="visually-hidden">Previous</span>

@@ -143,10 +143,9 @@ const [formSubmitted, setFormSubmitted] = useState(false)
     name="file"
     accept="application/pdf"
     onChange={handleChange}
-    style={{ display: 'none' }}  // Hide the file input
+    style={{ display: 'none' }}  
   />
 
-  {/* Custom label acting as a button */}
   <label htmlFor="file" className={styles.customFileLabel}>
     <span className="file-text">
       {formData.file ? formData.file.name : 'Upload your CV *'}

@@ -8,11 +8,7 @@ import Award from "../components/home/Award"
 import GalleryContainer from "./gallery/Gallery11"
 import Employee from "../components/home/Employee"
 
-import Tds from "../app/blogs/Gst"
-
 export default function Home() {
-
-
 
   return (
     <div>
@@ -22,14 +18,8 @@ export default function Home() {
         <Youtube/>
         <Employee/> 
         <GalleryContainer/>  
-        <Award/>
+        <Award/> 
         <FollowUs/>   
-
-        {/* <Tds/> */}
-        
-
-
-        
 
     </div>
 

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './Youtube.module.css';
 import Image from "next/image";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -44,6 +44,15 @@ const Youtube = () => {
     setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
+    }, 4000); // Change image every 4 seconds
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [data.length]);
+
   return (
     <div className={styles.container}>
       <div className={styles.textcontainer}>
@@ -52,19 +61,17 @@ const Youtube = () => {
       <div className={styles.imageWrapper}>
         <div className={styles.imageContainer}>
           <a href={data[currentIndex].url} target="_blank" rel="noopener noreferrer">
-          <Image
-            src={data[currentIndex].image}
-            alt={data[currentIndex].Description}
-            layout="fill"
-            objectFit="cover"
-          />
+            <Image
+              src={data[currentIndex].image}
+              alt={data[currentIndex].Description}
+              layout="fill"
+              objectFit="cover"
+            />
           </a>
-          
         </div>
       </div>
       <p className={styles.description}>
         <strong> {data[currentIndex].Description}</strong>
-       
       </p>
       <div className={styles.controls}>
         <button className={styles.controlButton} onClick={handlePrev}>
@@ -79,7 +86,6 @@ const Youtube = () => {
 };
 
 export default Youtube;
-
 
 
 

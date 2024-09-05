@@ -4,12 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram } from 'react-icons/fa';
-// import { useGetAdminProfile } from '../../lib/react-query/queries';
 
 
 
 const Footer = () => {
-  // const { data: adminProfile1, isLoading: isLoadingAdminProfile, refetch } = useGetAdminProfile();
  
 
   
@@ -19,7 +17,7 @@ const Footer = () => {
     Instagram: 'https://www.instagram.com/cadhirajostwal/',
     YouTube: 'https://www.youtube.com/@CADhirajOstwal',
     Address: '7 SHRIKRISHNA OPP KOFFEE CULTURE FC ROAD PUNE 411004',
-    Email: ' Dhiraj.ostwal@gmail.com',
+    Email: ' dhiraj.ostwal@gmail.com',
     Phone: '70200 45454',
     GoogleMap: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.1359398956106!2d73.83913731120742!3d18.52275808249856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bff534505583%3A0x49b15410f40cd6e2!2sCA%20Dhiraj%20Ostwal%20%7C%20Chartered%20Accountant%20%7C%20Strategy%20Coach!5e0!3m2!1sen!2sin!4v1718954796268!5m2!1sen!2sin '
   };

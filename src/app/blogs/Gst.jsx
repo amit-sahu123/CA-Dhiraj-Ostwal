@@ -78,7 +78,6 @@ const Gst = () => {
                 </li>
               </ul>
             </div>
-            {/* ...remaining content unchanged... */}
           </div>
           <div className={styles.Ads}>
             <div className={styles["blog-button"]}>

@@ -1,36 +1,37 @@
-"use client";
-
+'use client'; 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import styles from './Gallery11.module.css';
 
-const photos = [
-  { src: '/assets/1.png', alt: 'Event 1' },
-  { src: '/assets/2.png', alt: 'Event 2' },
-  { src: '/assets/3.png', alt: 'Event 3' },
-  { src: '/assets/4.png', alt: 'Event 4' },
-  { src: '/assets/5.png', alt: 'Event 5' },
-];
+const Gallery11 = () => {
+  const router = useRouter();
 
-const EventsGallery = () => {
-  const handleClick = (photo) => {
+  const handleViewMoreClick = () => {
+    router.push('/gallerydetail#Gallery'); 
   };
 
   return (
-    <div className={styles.galleryContainer}>
-      <h2 className={styles.galleryTitle}><span className={styles.highlight}>Events</span> gallery</h2>
-      <div className={styles.galleryRow}>
-        {photos.map((photo, index) => (
-          <div
-            key={index}
-            className={styles.galleryItem}
-            onClick={() => handleClick(photo)}
-          >
-            <img src={photo.src} alt={photo.alt} className={styles.galleryImage} />
-          </div>
-        ))}
+    <div className={styles.container}>
+     <div className={styles.photoGrid}>
+      <h2 className={styles.title}>
+        <span className={styles.eventsText}>Eve</span>nts Gallery
+      </h2>
+        <div className={styles.ph1}>
+          <img src="/assets/1.jpg" alt="Photo1" className={styles.photo} />
+          <img src="/assets/2.jpg" alt="Photo2" className={styles.photo} />
+          <img src="/assets/5.jpg" alt="Photo5" className={styles.photo} />
+        </div>
+        <div className={styles.ph2}>
+          <img src="/assets/3.jpg" alt="Photo3" className={styles.photo} />
+          <img src="/assets/4.jpg" alt="Photo4" className={styles.photo} />
+        </div>
+        <button className={styles.viewMoreButton} onClick={handleViewMoreClick}>
+          View More
+        </button>
       </div>
     </div>
   );
 };
 
-export default EventsGallery;
+export default Gallery11;
+

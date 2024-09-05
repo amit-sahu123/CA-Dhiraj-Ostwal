@@ -1,13 +1,8 @@
 import React from 'react'
 import styles from './About.module.css'
 import Image from 'next/image';
-// import { useGetAdminProfile } from '../../lib/react-query/queries';
 
 export default function About() { 
-    // const {data : adminProfile, isLoading: isLoadingAdminProfile, error}= useGetAdminProfile;
-    //  console.log(adminProfile)
-
-    // const adminImageUrl = adminProfile?.ImageUrl || "/assets/rajesh-pande.png"
 
     return (
   <>
@@ -32,12 +27,6 @@ export default function About() {
         
         <div className={styles.imgcontainer}>
             <div className={styles.image}>
-            {/* {isLoadingAdminProfile ? (
-                        <p>Loading...</p>
-                    ) : (
-                        <Image className={styles.abtpic}src={adminImageUrl} alt='admin profile' width={246} height={317}/> 
-
-                    )} */}
 
                     <Image className={styles.abtpic}src="/assets/rajesh-pande.png" alt='admin profile' width={246} height={317}/> 
 
