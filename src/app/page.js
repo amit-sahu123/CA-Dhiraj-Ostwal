@@ -16,7 +16,6 @@ export default function Home() {
         <About/>
         <Achievements/>
         <Youtube/>
-        {/* <Employee/>  */}
         <GalleryContainer/>  
         <Award/> 
         <FollowUs/>   
