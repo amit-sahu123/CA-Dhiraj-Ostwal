@@ -1,0 +1,94 @@
+.eventTeamSlider {
+    margin: 50px 0px 20px 0;
+}
+
+.eventTeamSlider h3 {
+    text-align: center;
+    padding: 15px 0px;
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px; 
+}
+
+.teamMember {
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+    padding: 1rem;
+}
+
+.slickCenter {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.slickSlider {
+    height: auto;
+}
+
+.memberInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+}
+
+.memberInfo img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+.slickCenter .teamMember p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .slickSlider {
+        height: auto;
+    }
+
+    .teamMember {
+        padding: 0.5rem;
+    }
+
+    .memberInfo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slickCenter .teamMember p {
+        font-size: 1em;
+    }
+
+    .eventTeamSlider h5 {
+        font-size: 20px;
+    }
+}
+
+/* ------------------- */
+.slick-dots {
+    bottom: -25px; 
+}
+
+.slick-dots li button:before {
+    font-size: 12px; 
+    color: #000; 
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000; 
+}
