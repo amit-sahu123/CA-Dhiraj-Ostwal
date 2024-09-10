@@ -17,10 +17,23 @@ const Enquery = ({ closeModal }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }))
+
+    if (name === 'whatsappNumber') {
+      const phoneRegex = /^[0-9\b]+$/ // Only allow digits
+      if (value === '' || phoneRegex.test(value)) {
+        if (value.length <= 10) {
+          setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+          }))
+        }
+      }
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }))
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -29,6 +42,12 @@ const Enquery = ({ closeModal }) => {
 
     if (!formData.whatsappNumber || !formData.subject || !formData.datetime) {
       setError('All fields are required.')
+      return
+    }
+
+    const phoneRegex = /^\d{10}$/
+    if (!phoneRegex.test(formData.whatsappNumber)) {
+      setError('WhatsApp number must be exactly 10 digits.')
       return
     }
 
@@ -59,45 +78,54 @@ const Enquery = ({ closeModal }) => {
         </button>
         <h2>Book an Appointment</h2>
         {formSubmitted && !error && (
-          <div className='successMessage' style={{ color: 'green' }}>
+          <div className="successMessage" style={{ color: 'green' }}>
             Meeting scheduled successfully!
           </div>
         )}
         <form onSubmit={handleSubmit} className={styles.appointmentForm}>
-          <label htmlFor='whatsappNumber'>WhatsApp Number:</label>
+          <label htmlFor="whatsappNumber">WhatsApp Number:</label>
           <input
-            type='text'
-            id='whatsappNumber'
-            name='whatsappNumber'
+            type="text"
+            id="whatsappNumber"
+            name="whatsappNumber"
             value={formData.whatsappNumber}
             onChange={handleChange}
             required
           />
+          {error && error.includes('WhatsApp number') && (
+            <div className="errorMessage" style={{ color: 'red' }}>
+              WhatsApp number must be exactly 10 digits.
+            </div>
+          )}
 
-          <label htmlFor='subject'>Subject:</label>
+          <label htmlFor="subject">Subject:</label>
           <input
-            type='text'
-            id='subject'
-            name='subject'
+            type="text"
+            id="subject"
+            name="subject"
             value={formData.subject}
             onChange={handleChange}
             required
           />
 
-          <label htmlFor='datetime'>Date and Time:</label>
+          <label htmlFor="datetime">Date and Time:</label>
           <input
-            type='datetime-local'
-            id='datetime'
-            name='datetime'
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
             value={formData.datetime}
             onChange={handleChange}
             required
           />
 
-          {error && <div className='errorMessage'>{error}</div>}
+          {error && !error.includes('WhatsApp number') && (
+            <div className="errorMessage" style={{ color: 'red' }}>
+              {error}
+            </div>
+          )}
 
           <button
-            type='submit'
+            type="submit"
             className={styles.submitButton}
             disabled={isLoadingMeeting}
           >
@@ -110,4 +138,3 @@ const Enquery = ({ closeModal }) => {
 }
 
 export default Enquery
-
