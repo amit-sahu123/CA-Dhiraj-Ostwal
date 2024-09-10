@@ -6,7 +6,6 @@ import FollowUs from "../components/home/FollowUs";
 import Achievements from "../components/home/Achievements";
 import Award from "../components/home/Award"
 import GalleryContainer from "./gallery/Gallery11"
-import Employee from "../components/home/Employee"
 
 export default function Home() {
 
