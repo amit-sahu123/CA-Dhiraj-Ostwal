@@ -66,6 +66,7 @@ export default function Carousel() {
                 alt="pics"
                 layout="fill"
                 objectFit="cover"
+               
               />
             </div>
             <div className="carousel-caption d-block" style={{ color: 'white', bottom: '20px' }}>

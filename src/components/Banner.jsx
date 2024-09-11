@@ -7,7 +7,7 @@ const Banner = ({imageUrl,breadcrumb,headline}) => {
   return (
     <div className={styles.first}>
       <div className={styles.img}>
-        <Image className={styles.image} src={imageUrl} alt="career image"   layout='fill' objectFit='cover'  />
+        <Image className={styles.image} src={imageUrl} alt="career image"   fill style={{objectFit:'cover'}}  />
 
         
         <nav className={styles.nav11}

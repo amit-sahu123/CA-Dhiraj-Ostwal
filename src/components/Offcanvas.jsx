@@ -45,8 +45,6 @@ export default function Offcanvas() {
                  <ul className="dropdown-menu">
                    <li><a className="dropdown-item" href="/achievementsmore" >Achievements</a></li>
                    <li><a className="dropdown-item" href="/profile" >Profile</a></li>
-                   <li><a className="dropdown-item" href="/gallerydetail" >Gallery</a></li>
-                   <li><a className="dropdown-item" href="/news" >News</a></li>
                    <li><a className="dropdown-item" href="/reviews" >Reviews</a></li>
                  </ul>
                </li> 
