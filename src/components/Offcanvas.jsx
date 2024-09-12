@@ -59,7 +59,7 @@ export default function Offcanvas() {
                  <a className="nav-link" href="/contact" >Contact</a>
                </li>
                <li className="nav-item">
-                 <a className="nav-link" href="/signin" >Signin</a>
+                 <a className="nav-link" href="https://ca-dhirah-ostwal-adminpanel-pbf5.vercel.app/" >Signin</a>
                </li>
              </ul>
    </div>

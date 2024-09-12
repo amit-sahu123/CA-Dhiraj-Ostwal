@@ -64,7 +64,7 @@ const Footer = () => {
               <li><a href="/contact" onClick={handleButtonClick} >Contact</a></li>
               <li><a href="/achievementsmore" onClick={handleButtonClick} >Achievements</a></li>
               <li><a href="/profile" onClick={handleButtonClick} >Profile</a></li>
-              <li><a href="/signin" onClick={handleButtonClick} >SignIn</a></li>
+              <li><a href="https://ca-dhirah-ostwal-adminpanel-pbf5.vercel.app/" onClick={handleButtonClick} >SignIn</a></li>
             </ul>
           </div>
           <div className={`${styles.footerItem} ${styles.office}`}>
