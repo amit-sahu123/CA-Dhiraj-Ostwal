@@ -15,7 +15,7 @@ const AdvisoryServices = () => {
             <h3>Loans and Funding for Business</h3>
             <p>We secure optimal financing solutions tailored to your business growth needs.</p>
             </Link>
-            <Link href=""  className={styles.data} >
+            <Link href="/blogs/PropertyAdvice"  className={styles.data} >
                 
             <h3>Property advisory</h3>
             <p>Expert guidance on real estate investments, valuations, and tax implications.</p>

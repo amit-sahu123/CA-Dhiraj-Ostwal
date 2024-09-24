@@ -10,15 +10,15 @@ const Auditservices = () => {
     <div>
         <Services title={"Audit Services"} />
         <div className={styles.datacontainer}>
-            <div className={styles.data} >
+            <Link href="/blogs/Statutory" className={styles.data} >
             <h3>Statutory audit</h3>
             <p>Ensuring compliance with all statutory requirements for businesses.</p>
-            </div>
+            </Link>
 
-            <div className={styles.data} >
+            <Link href="/blogs/Taxaudit" className={styles.data} >
             <h3>Tax Audit</h3>
             <p>Thorough tax audit services to ensure compliance and identify opportunities.</p>
-            </div>
+            </Link>
 
             <Link href="/blogs/ComplianceAudit" className={styles.data} >
             <h3>Complience Audit</h3>

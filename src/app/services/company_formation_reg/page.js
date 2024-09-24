@@ -22,31 +22,31 @@ const CompanyFormation = () => {
             <p>Streamlined services for registering various forms of businesses.</p>
             
             </Link>
-            <div className={styles.data} >
+            <Link href="/blogs/Shop_act" className={styles.data} >
             <h3>Shop act</h3>
               <p>Assistance in obtaining and maintaining Shop Act licenses.</p>
             
-            </div>
-            <div className={styles.data} >
+            </Link>
+            <Link href="/blogs/Msme" className={styles.data} >
             <h3>Ministry of Micro, Small & Medium Enterprises</h3>
             <p>Guidance on MSME registration and accessing related benefits.</p>
             
-            </div>
-            <div className={styles.data} >
+            </Link>
+            <Link href="/blogs/PartnershipRg" className={styles.data} >
             <h3>Partnership Registration</h3>
             <p>Efficient services for registering and formalizing business partnerships.</p>
             
-            </div>
+            </Link>
             <div className={styles.data} >
             <h3>Limited Liability Partnership</h3>
             <p>Specialized support in forming and managing Limited Liability Partnerships.</p>
             
             </div>
-            <div className={styles.data} >
+            <Link href="/blogs/NonProfitCom" className={styles.data} >
             <h3>Non-Profit Company</h3>
               <p>Expert assistance in establishing and managing non-profit organizations.</p>
             
-            </div>
+            </Link>
             <Link href="/blogs/Charitable" className={styles.data} >
             <h3>Charitable Trust</h3>
             <p>Comprehensive services for setting up and managing charitable trusts.</p>

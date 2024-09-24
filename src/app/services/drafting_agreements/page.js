@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import Link from 'next/link'
 import Services from '../Services'
 import styles from '../main.module.css'
 
@@ -26,10 +27,10 @@ const DraftingAgreements = () => {
             <h3>Memorandum of Association</h3>
             <p>Memorandum of Association is a legal document that explains why the organization was founded.</p>   
             </div>
-            <div className={styles.data} >
+            <Link href="/blogs/Shareholder" className={styles.data} >
             <h3>Shareholders Agreement</h3>
             <p>Crafting comprehensive shareholder agreements to protect all parties' interests.</p>   
-            </div>
+            </Link>
             <div className={styles.data} >
             <h3>Debentures Agreement</h3>
             <p>Specialized drafting of debenture agreements for debt instruments.</p>  
