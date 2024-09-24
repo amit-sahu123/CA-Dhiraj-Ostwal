@@ -2,6 +2,7 @@
 import React from 'react'
 import Services from '../Services'
 import styles from '../main.module.css'
+import Link from 'next/link'
 
 const Auditservices = () => {
 
@@ -19,15 +20,15 @@ const Auditservices = () => {
             <p>Thorough tax audit services to ensure compliance and identify opportunities.</p>
             </div>
 
-            <div className={styles.data} >
+            <Link href="/blogs/ComplianceAudit" className={styles.data} >
             <h3>Complience Audit</h3>
             <p>Comprehensive assistance in meeting all regulatory compliance requirements.</p>
-            </div>
+            </Link>
 
-            <div className={styles.data} >
+            <Link href="/blogs/InternalAudit" className={styles.data} >
             <h3>Internal Audit</h3>
             <p>Detailed internal audit services to improve operational efficiency and control.</p>
-            </div>
+            </Link>
 
         </div>
     </div>
