@@ -37,9 +37,6 @@ property dispute in family"
       <div className={styles.body}>
         <div className={styles.links}>
         <p>
-            sfhui9asyuf ioas jiashi iufyhasui fyasduio foiasdsf ioayuiof
-            ayusbiof uyuioasf aosu;yfuiasy fuiqshorsayu iofasiulyfuiashfjkas
-            ofriysiofy asou foausf iouasyfasouf as fuassdl
           </p>
         </div>
         <div className={styles.blog}>
@@ -100,7 +97,7 @@ property dispute in family"
                 <li>
                 Unequal inheritance                </li>
                 <li>
-Differing opinions on property use or sale                </li>
+                 Differing opinions on property use or sale                </li>
                 <li>
                 Historical family conflicts                </li>
             </ul>

@@ -2,8 +2,8 @@
 import React, {useState} from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "./Blog.module.css";
-import Modal from "../services/Enquery";
+import styles from "../Blog.module.css";
+import Modal from "../../services/Enquery";
 
 
 const LLP = () => {

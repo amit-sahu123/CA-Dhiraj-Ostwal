@@ -28,7 +28,8 @@ const AdvisoryServices = () => {
             <h3>Fixed Deposite Advisory</h3>
             <p>Navigate the FD landscape for the best rates and terms aligned with your goals.</p>   
             </Link>
-            <Link href="/blogs/BondAd"  className={styles.data} >
+            {/* <Link href="/blogs/BondAd"  className={styles.data} > */}
+            <Link href="/services/advisory_services/BondAd"  className={styles.data} >
             <h3>Bond Advisory</h3>
             <p>Expert advice on bond investments to optimize your fixed-income portfolio.</p>  
             </Link>

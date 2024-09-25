@@ -37,11 +37,11 @@ const CompanyFormation = () => {
             <p>Efficient services for registering and formalizing business partnerships.</p>
             
             </Link>
-            <div className={styles.data} >
+            <Link href="/blogs/LLP" className={styles.data} >
             <h3>Limited Liability Partnership</h3>
             <p>Specialized support in forming and managing Limited Liability Partnerships.</p>
             
-            </div>
+            </Link>
             <Link href="/blogs/NonProfitCom" className={styles.data} >
             <h3>Non-Profit Company</h3>
               <p>Expert assistance in establishing and managing non-profit organizations.</p>
