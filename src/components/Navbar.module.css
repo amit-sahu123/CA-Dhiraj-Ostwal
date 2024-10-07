@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color:white;
-    padding: 15px 30px 15px 30px;
+    padding: 15px 20px;
     width: 100%;
     box-sizing: border-box;
     position: sticky;
@@ -109,7 +109,8 @@
   }
   @media(max-width:426px){
     .container{
-      padding: 5px 15px 5px 20px;
+      padding: 0px 15px 0px 20px;
+      height: 90px;
     }
     .first {
       min-width: 160px; 
@@ -123,10 +124,11 @@
     
   }
   @media(max-width:321px){
-    .first {
+    /* .first {
       min-width: 150px; 
-    }
+    } */
     .container{
-      padding: 5px 5px 5px 15px;
+      padding: 0px 0px 0px 15px;
+      height: 90px;
     }
   }

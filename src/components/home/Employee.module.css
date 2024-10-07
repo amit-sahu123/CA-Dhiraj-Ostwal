@@ -2,11 +2,11 @@
     margin: 50px 0px 20px 0;
 }
 
-.eventTeamSlider h3 {
+.eventTeamSlider h2 {
     text-align: center;
     padding: 15px 0px;
     color: black;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
 
 }
@@ -42,6 +42,9 @@
     align-items: center;
     text-align: center;
     padding: 12px;
+}
+.memberInfo p{
+    font-size: 19px;
 }
 
 .memberInfo img {

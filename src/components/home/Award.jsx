@@ -27,7 +27,7 @@ const Award = () => {
 
   return (
     <main className="relative grid place-items-center w-full mx-auto max-w-5xl shadow-2xl rounded-2xl my-10 " >
-      <h1 className="text-2xl  mb-6">
+      <h1 className=" mb-6" style={{fontSize:'35px'}}>
         <span style={{color:'orangered'}}>Awa</span>
         <span className="black">rd</span>
       </h1>

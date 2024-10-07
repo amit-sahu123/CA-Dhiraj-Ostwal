@@ -23,7 +23,7 @@ const Banner = ({imageUrl,breadcrumb,headline}) => {
               {breadcrumb}
             </li>
           </ol>
-          <h3>{headline}</h3>
+          <h1 style={{fontSize:'32px', fontFamily: 'sans-serif' }}>{headline}</h1>
         </nav>
 
       </div>

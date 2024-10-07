@@ -38,8 +38,7 @@ export default function Navbar() {
         <>
             <nav className={styles.container}>
                 <div className={styles.first}>
-                    <Image src="/assets/CALOGO.png" alt="Logo" width={200} height={100} priority
-        style={{ width: 'auto', height: 'auto' }}/>
+                    <Image src="/assets/newcalogo.png" alt="Logo" width={300} height={90} priority layout='responsive'/>
                 </div>
                 <div className={styles.second}>
                     <div className={styles.MenuIcon}>

@@ -31,6 +31,26 @@ const Youtube = () => {
       image: "/assets/youtube5.png",
       Description: "How to take right Decisions",
       url:"https://www.youtube.com/watch?v=NNC5ULk_3KA"
+    },
+    {
+      image: "/assets/newyoutube1.png",
+      Description: "",
+      url:"https://youtu.be/cX75QqU4G10?si=R7AwmEO7dht4ZIfp"
+    },
+    {
+      image: "/assets/newyoutube2.png",
+      Description: "",
+      url:"https://youtu.be/ps-jgSOhiCs?si=UBpoq1XIMtdCgd0c"
+    },
+    {
+      image: "/assets/newyoutube3.png",
+      Description: "",
+      url:"https://youtu.be/6zci_U5OdqM?si=d5H6v0dSsMCjjiKl"
+    },
+    {
+      image: "/assets/newyoutube4.png",
+      Description: "",
+      url:"https://youtu.be/VdEfmr6KbsQ?si=SlIhQE5zYThRbx0D"
     }
   ];
 

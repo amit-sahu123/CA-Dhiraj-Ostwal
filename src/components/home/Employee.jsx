@@ -77,7 +77,7 @@ const Employee = () => {
 
   return (
     <div className={styles.eventTeamSlider}>
-      <h3> <span style={{color:'orangered'}}>Meet</span> Our Team</h3>
+      <h2> <span style={{color:'orangered'}}>Meet</span> Our Team</h2>
       <div className={styles.sliderContainer}>
         <Slider ref={sliderRef} {...sliderSettings}>
           {teamMembers.map((member, index) => (

@@ -9,9 +9,9 @@
 .textcontainer{
     text-align: left;
     width: 65%;
-    margin-left: 40px;
-    margin-top: 10px;
-    margin-right: 35px;
+    margin-left: 140px;
+    margin-top: 70px;
+    margin-right: 50px;
     margin-bottom: 20px;
 }
 .imgcontainer{
@@ -28,7 +28,20 @@
 }
 .text h3{
     margin-bottom: 20px;
-    color: orangered;
+    color: black;
+}
+.purpose{
+    padding: 25px 50px;
+    padding-left: 170px;
+    display: flex;
+    flex-direction:column ;
+    gap: 35px;
+    text-align: left;
+
+}
+.purpose h2{
+    color: black;
+    font-size: 25px;
 }
 
 
@@ -47,8 +60,14 @@
         margin: auto;
         display: flex;
         justify-content: center;  
-        text-align: center;
+        text-align: left;
     }
+    .purpose{
+        gap: 15px;
+        padding: 25px 25px;
+        padding-left: 100px;
+    
+        }
     
 }
 @media (max-width:480px){
@@ -59,28 +78,23 @@
         width: 130px;
     }
     .textcontainer{
-        text-align: center;
+        text-align: left;
         width: 95%;
         margin: auto;
         
     }
+    .purpose{
+        gap: 15px;
+        padding: 25px 25px;
+    
+        }
 }
 
 /* =-------------------------------------= */
-.purpose{
-    padding: 25px 50px;
-    display: flex;
-    flex-direction:column ;
-    gap: 35px;
-    text-align: center;
 
-}
-.purpose h2{
-    color: orangered;
-}
 @media (max-width:426px) {
     .purpose{
-        gap: 15px;
+    gap: 15px;
     padding: 25px 25px;
 
     }

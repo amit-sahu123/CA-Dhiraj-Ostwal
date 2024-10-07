@@ -115,7 +115,7 @@ export default function Career() {
 
         <div className={styles.secondcontainer}>
           <div className={styles.oppo}>
-            <h2>
+            <h2 style={{fontFamily:"Playfair Display"}}>
               CAREER <span style={{ color: "#2a88fa" }}>OPPORTUNITIES</span>
             </h2>
             <p>
@@ -130,8 +130,10 @@ export default function Career() {
             <img src="assets/careers.png" alt="" />
           </div>
           <div className={styles.onlineform}>
+            <div style={{width:'90%'}}>
             <form onSubmit={handleSubmit}>
-              <h2>APPLY ONLINE </h2>
+              
+              <h3 style={{fontFamily:"Playfair Display",fontWeight:'600'}}>APPLY ONLINE </h3>
               <div className={`${styles.formgroup} ${styles.p11}`}>
                 <PersonIcon color="primary" />
                 <input
@@ -209,7 +211,7 @@ export default function Career() {
                 </label>
               </div>
 
-              <div className={`${styles.formgroup} ${styles.marrtop}`}>
+              <div className={`${styles.formgroup} ${styles.marrtop}`} style={{border:'none'}}>
                 <button type="submit" id="button" name="button"  >
                   {" "}
                   {/* {isLoadingResume ? "Sending..." : "Send To Us"} */}
@@ -222,6 +224,8 @@ export default function Career() {
               )}
               {error && <p style={{ color: "red" }}>{error}</p>}
             </form>
+            </div>
+            
           </div>
         </div>
       </div>

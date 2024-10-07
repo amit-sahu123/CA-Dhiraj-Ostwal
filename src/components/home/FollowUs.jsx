@@ -50,9 +50,9 @@ export default function FollowUs() {
   return (
     <div className={styles.container}>
       <div className={styles.containerFirst}>
-        <h1 style={{ fontWeight: 'bold', textAlign:'center' }}>
+        <h2 style={{textAlign:'center',fontSize:'35px', fontWeight:'600' }}>
           <span className={styles.Fol}>Fol</span>low Us
-        </h1>
+        </h2>
         <h3 className={styles.subheading} style={{textAlign:'center'}}>Find here our latest posts</h3>
 
         <div className={styles.media}>
